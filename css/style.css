@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
+    height: 100%;
 }
 
 h1 {
@@ -12,6 +17,6 @@ h1 {
     height: 100px;
     background-color: red;
 
-    margin-left: 50%;
-    margin-right: 50%;
+    margin: auto;
+    text-align: center;
 }
