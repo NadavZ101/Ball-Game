@@ -3,23 +3,22 @@
 var gBallSize = 50
 
 function onBallClick() {
-    const elBall = document.querySelector('.ball')
-
     gBallSize += 50
 
-    const currHeight = elBall.style.height
-    console.log('currHeight ', currHeight)
+    const elBall = document.querySelector('.ball')
+    const currHeight = parseInt(elBall.style.height)
+    const currWidth = parseInt(elBall.style.width)
+    var newHeight = currHeight + gBallSize
+    var newWidth = currWidth + gBallSize
 
-    const currWidth = elBall.style.width
-    console.log('currWidth ', currWidth)
 
-    // console.log('gBallSize ', gBallSize)
-    elBall.style.height = (currHeight + (gBallSize + 'px'))
-    elBall.style.width = (currWidth + (gBallSize + 'px'))
+    if (gBallSize === 400) {
+        gBallSize = 0
+        newHeight = 100
+        newWidth = 100
+    }
+
+    elBall.style.height = newHeight + 'px'
+    elBall.style.width = newWidth + 'px'
     elBall.innerText = gBallSize
-
-    console.log('elBall ', elBall)
-
-
-
 }
