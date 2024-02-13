@@ -12,11 +12,18 @@ h1 {
 }
 
 .ball {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: red;
+    font-size: 22px;
+    font-weight: bold;
 
     margin: auto;
     text-align: center;
+
 }
