@@ -28,3 +28,22 @@ h1 {
 
     transition: 1s;
 }
+
+.ball2 {
+    display: grid;
+    align-items: center;
+
+    padding-top: 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(30, 255, 0);
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+
+    transition: 1s;
+}
